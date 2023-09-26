@@ -25,7 +25,7 @@ if @random_move == "rock"
     elsif @random_move == "scissors"
        @wincon = "lost"
     end
-  render({ :template => "game_templates/play_scissors" })
+  render({ :template => "game_templates/play_paper" })
     end
 
 
@@ -39,7 +39,7 @@ def lion
  elsif @random_move == "scissors"
     @wincon = "tied"
  end
-  render({ :template => "game_templates/play_rock" })
+  render({ :template => "game_templates/play_scissors" })
     end
 
 
